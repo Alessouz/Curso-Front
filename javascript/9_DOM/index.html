@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>DOM</title>
+    <link rel="stylesheet" href="/assets/css/modal.css">
+    <link rel="stylesheet" href="/assets/css/aulas.css">
+</head>
+<body>
+    <header>
+        <nav class="d-flex justify-content-between">
+            <h1 class="">9. DOM</h1>
+            <a href="/menuAulas.html" class="btn m-3">Voltar</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Protocolo Web', 
+                    'Um pouco sobre protocolo Web',  
+                    '/assets/img/9_DOM/protocoloWeb.png')">
+                    <img src="/assets/img/9_DOM/protocoloWeb.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Protocolo Web</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Conhecendo URL', 
+                    '',  
+                    '/assets/img/9_DOM/ConhecendoURL.PNG')">
+                    <img src="/assets/img/9_DOM/ConhecendoURL.PNG" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Conhecendo URL</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'DOM', 
+                    '',  
+                    '/assets/img/9_DOM/dom.PNG')">
+                    <img src="/assets/img/9_DOM/dom.PNG" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Document Object Model</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div id="card" class="card" style="width: 18rem;">
+                    <img src="" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="dom.html">Indo para pagina de aula</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modali">
+        <div class="modali-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <hr>
+            <img id="modalImage" src="" alt="Imagem do Modal">
+            <hr>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="/assets/js/popUp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

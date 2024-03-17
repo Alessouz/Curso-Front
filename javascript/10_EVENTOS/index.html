@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="/assets/css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="d-flex justify-content-between">
+            <h1 class="">10. EVENTOS</h1>
+            <a href="/menuAulas.html" class="btn m-3">Voltar</a>
+        </nav>
+    </header>
+    <section class="container sec">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'O que são eventos?',
+                    'Ações atreladas a algum comportamento do usuario',
+                    '')">
+                    <img src="" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    '',
+                    '',
+                    '')">
+                    <img src="" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    '',
+                    '',
+                    '')">
+                    <img src="" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="container mt-4 ">
+        <h1 id="my-tittle">Eventos</h1>
+        <button id="my-button">Clica em mim!</button>
+
+        <h2>Removendo eventos</h2>
+        <button id="btn">Tem evento</button>
+        <button id="other-btn">Removendo o evento</button>
+
+        <div id="btn-container">
+            <button id="div-btn">Propagação</button>
+        </div>
+
+        <a target="_blank" href="https://www.google.com" class="btn btn-success botao" >link</a>
+
+        <h4 id="mouse">Eventos de mouse</h4>
+
+        <h4>Evento de focus</h4>
+        <input type="text" id="my-input" placeholder="Testando...">
+    </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modali">
+        <div class="modali-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <hr>
+            <img id="modalImage" src="" alt="Imagem do Modal">
+            <hr>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+    <script src="/assets/js/popUp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

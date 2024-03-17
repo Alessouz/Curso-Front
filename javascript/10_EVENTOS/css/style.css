@@ -1,0 +1,12 @@
+.sec {
+    border-bottom: 2px solid #ccc;
+}
+
+body {
+    margin-bottom: 1000px;  
+}
+
+#btn-container {
+    padding: 20px;
+    background-color: green;
+}

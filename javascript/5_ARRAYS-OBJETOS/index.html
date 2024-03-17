@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array & objetos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/modal.css">
+</head>
+<body>
+    <header>
+        <nav class="d-flex justify-content-between m-3">
+            <h1>5. Arrays & Objetos</h1>
+            <a href="/menuAulas.html" class="m-3 btn ">Voltar</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Array', 
+                    'Um array é uma estrutura de dados que permite armazenar e organizar elementos de forma indexada. Os elementos podem ser de qualquer tipo, incluindo números, strings, objetos e até mesmo outras arrays.', 
+                    '/assets/img/5_arrayObject/array.PNG')">
+                    <img src="/assets/img/5_arrayObject/array.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Array</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Propriedades', 
+                    ' Os arrays são objetos que possuem propriedades e métodos específicos. Além dos elementos que você adiciona a um array, existem algumas propriedades incorporadas que fornecem informações sobre o array.', 
+                    '/assets/img/5_arrayObject/propriedade.PNG')">
+                    <img src="/assets/img/5_arrayObject/propriedade.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Propriedades</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Metodos', 
+                    '', 
+                    '/assets/img/5_arrayObject/metodo.PNG')">
+                    <img src="/assets/img/5_arrayObject/metodo.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Metodos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Objetos', 
+                    'Objeto é uma estrutura de dados que permite armazenar e organizar informações. Um objeto é uma coleção de pares chave-valor, onde cada chave (ou nome) está associada a um valor.', 
+                    '/assets/img/5_arrayObject/object.PNG')">
+                    <img src="/assets/img/5_arrayObject/object.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Objetos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Criando e deletando propriedades', 
+                    'Você pode criar e deletar propriedades de objetos. Usando o (nome_do_array.nome_da_propriedade = valor) ou Usando o (delete nome do array.nome_dapropriedade)', 
+                    '/assets/img/5_arrayObject/createDelete.PNG')">
+                    <img src="/assets/img/5_arrayObject/createDelete.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Criando e deletando propriedades</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Mais sobre objetos', 
+                    '', 
+                    '/assets/img/5_arrayObject/maisSobreObj.PNG')">
+                    <img src="/assets/img/5_arrayObject/maisSobreObj.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mais sobre objetos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Conhecendo melhor os objetos', 
+                    '', 
+                    '/assets/img/5_arrayObject/maisObject.PNG')">
+                    <img src="/assets/img/5_arrayObject/maisObject.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Conhecendo melhor os objetos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Mutação', 
+                    '', 
+                    '/assets/img/5_arrayObject/mutação.PNG')">
+                    <img src="/assets/img/5_arrayObject/mutação.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mutação</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Loops em Arrays', 
+                    '', 
+                    '/assets/img/5_arrayObject/loopArray.PNG')">
+                    <img src="/assets/img/5_arrayObject/loopArray.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Loops em Arrays</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Push & Pop', 
+                    'Push e Pop são métodos utilizados em arrays para adicionar e remover elementos, respectivamente. O Push adiciona um ou mais elementos ao final de um array. Ele modifica o array original. O Pop remove o último elemento de um array. Ele modifica o array original e retorna o elemento removido.', 
+                    '/assets/img/5_arrayObject/pushPop.PNG')">
+                    <img src="/assets/img/5_arrayObject/pushPop.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Push & Pop</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Shift & UnShift', 
+                    'O método shift é utilizado para remover o primeiro elemento de um array. Ele modifica o array original e retorna o elemento removido. Já o método unshift é usado para adicionar um ou mais elementos ao início de um array. Ele modifica o array original.', 
+                    '/assets/img/5_arrayObject/shiftUnshift.PNG')">
+                    <img src="/assets/img/5_arrayObject/shiftUnshift.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Shift & UnShift</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'IndexOF & lastIndexOF', 
+                    '', 
+                    '/assets/img/5_arrayObject/indexofLastIndexof.PNG')">
+                    <img src="/assets/img/5_arrayObject/indexofLastIndexof.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">IndexOF & lastIndexOF</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Slice', 
+                    '', 
+                    '/assets/img/5_arrayObject/slice.PNG')">
+                    <img src="/assets/img/5_arrayObject/slice.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Slice</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Foreach', 
+                    '', 
+                    '/assets/img/5_arrayObject/forEach.PNG')">
+                    <img src="/assets/img/5_arrayObject/forEach.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Foreach</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Includes', 
+                    '', 
+                    '/assets/img/5_arrayObject/includes.PNG')">
+                    <img src="/assets/img/5_arrayObject/includes.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Includes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Reverse', 
+                    '', 
+                    '/assets/img/5_arrayObject/reverse.PNG')">
+                    <img src="/assets/img/5_arrayObject/reverse.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Reverse</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Trim', 
+                    'O método trim() em JavaScript é utilizado em strings para remover espaços em branco (incluindo espaços, tabulações e quebras de linha) do início e do final da string. Este método não afeta os espaços em branco dentro da própria string.', 
+                    '/assets/img/5_arrayObject/trim.PNG')">
+                    <img src="/assets/img/5_arrayObject/trim.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Trim</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'padStart & padEnd', 
+                    '', 
+                    '/assets/img/5_arrayObject/padstartPadend.PNG')">
+                    <img src="/assets/img/5_arrayObject/padstartPadend.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">padStart & padEnd</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Includes', 
+                    '', 
+                    '/assets/img/5_arrayObject/includes.PNG')">
+                    <img src="/assets/img/5_arrayObject/includes.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Includes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Split', 
+                    '', 
+                    '/assets/img/5_arrayObject/split.PNG')">
+                    <img src="/assets/img/5_arrayObject/split.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Split</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Join', 
+                    '', 
+                    '/assets/img/5_arrayObject/join.PNG')">
+                    <img src="/assets/img/5_arrayObject/join.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Join</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Repeat', 
+                    '', 
+                    '/assets/img/5_arrayObject/repeat.PNG')">
+                    <img src="/assets/img/5_arrayObject/repeat.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Repeat</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Rest Operator', 
+                    'O operador rest, representado por três pontos (...), é utilizado em JavaScript para lidar com um número variável de argumentos em funções', 
+                    '/assets/img/5_arrayObject/restOperator.PNG')">
+                    <img src="/assets/img/5_arrayObject/restOperator.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rest Operator</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'For of', 
+                    '', 
+                    '/assets/img/5_arrayObject/forOf.PNG')">
+                    <img src="/assets/img/5_arrayObject/forOf.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">For of</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Destructuring em objetos', 
+                    '', 
+                    '/assets/img/5_arrayObject/destructuringObject.PNG')">
+                    <img src="/assets/img/5_arrayObject/destructuringObject.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Destructuring em objetos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Destructuring em Array', 
+                    '', 
+                    '/assets/img/5_arrayObject/destructuringArray.PNG')">
+                    <img src="/assets/img/5_arrayObject/destructuringArray.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Destructuring em Array</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'JSON', 
+                    '', 
+                    '/assets/img/5_arrayObject/json.PNG')">
+                    <img src="/assets/img/5_arrayObject/json.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">JSON</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3">
+                <div id="card" class="card" style="width: 18rem;" onclick="openModal(
+                    'Convertendo JSON', 
+                    '', 
+                    '/assets/img/5_arrayObject/convertJson.PNG')">
+                    <img src="/assets/img/5_arrayObject/convertJson.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Convertendo JSON</h5>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </main>
+    
+<!-- Modal -->
+<div id="myModal" class="modali">
+    <div class="modali-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2><hr>
+        <img id="modalImage" src="" alt="Imagem do Modal"><hr>
+        <p id="modalText"></p>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="/assets/js/popUp.js"></script>
+
+</body>
+</html>

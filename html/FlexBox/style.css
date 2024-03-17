@@ -1,0 +1,127 @@
+.flex {
+    display: flex;
+}
+
+.flex p {
+    padding: 2px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 40px;
+    width: 33%;
+    border: 1px solid green;
+}
+
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid blue;
+    gap: 10px;
+}
+
+.gap .box {
+    width: 32%;
+}
+
+/* Order */
+.order {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item1,
+.item2,
+.item3 {
+    margin: 10px;
+}
+
+.item1 {
+    order: 3;
+    height: 40px;
+    width: 33%;
+    border: 1px solid green;
+}
+
+.item2 {
+    order: 2;
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+
+.item3 {
+    order: 1;
+    height: 40px;
+    width: 33%;
+    border: 1px solid blue;
+}
+
+/* Grow */
+.grow {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#box1 {
+    flex-grow: 2;
+}
+  
+#box2 {
+    flex-grow: 1;
+}
+
+/* Basis */
+.basis {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.basis .box {
+    flex-basis: 50px;
+}
+
+.basis .big {
+    flex-grow: 1;
+}
+
+/* Shrink */
+.shrink {
+    display: flex;
+}
+
+.shrink .box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small {
+    flex-shrink: 2;
+}
+
+/* Auto Alinhamento */
+.auto-align {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid purple;
+}
+
+.auto-align .different {
+    align-self: center;
+}
